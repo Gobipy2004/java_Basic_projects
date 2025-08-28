@@ -10,13 +10,17 @@ class Swigyy
 		System.out.println("\t\t\t1.Sing-in\t|\t2.sing-up");
 		System.out.print("Enter Log-In Option: ");
 		int log=sw.nextInt();
+		int password=2004;
 		switch (log)
 		{
 		case 1->{
 			System.out.println("Processing.....");
 			Thread.sleep(3000);
-			System.out.println("Already You Have Account.....");
-			System.out.println("\n\t\t\tHotels Name:\n1.A2b\n2.Pams\n3.Kfc");
+			System.out.print("Enter Your Password: ");
+			int pass=sw.nextInt();
+			if (password==pass)
+			{
+				System.out.println("\n\t\t\tHotels Name:\n1.A2b\n2.Pams\n3.Kfc");
 			System.out.print("\t\t\tEnter Hotel id:");
 			int hotel = sw.nextInt();
 			switch (hotel)
@@ -217,7 +221,7 @@ class Swigyy
 						System.out.println("\t\t\tYou Selected Chiken Biriyani");
 						double amount=150;
 						System.out.println("\t\t\tChiken Biriyani Price:"+amount);
-						System.out.print("\n\t\t\tEnter quantity of Sambar rice:");
+						System.out.print("\n\t\t\tEnter quantity of Chiken Biriyani:");
 						int sr=sw.nextInt();
 						amount*=sr;
 						System.out.println("Processing.....");
@@ -439,7 +443,7 @@ class Swigyy
 						Thread.sleep(3000);
 						System.out.println("\t\t\tYou Selected Chiken Lalipop");
 						double amount=250;
-						System.out.println("\t\t\tDosa Price:"+amount);
+						System.out.println("\t\t\tChiken Lalipop Price:"+amount);
 						System.out.print("\n\t\t\tEnter quantity of Chiken Lalipop:");
 						int sr=sw.nextInt();
 						amount*=sr;
@@ -571,11 +575,20 @@ class Swigyy
 					System.out.println("\n\t\t\tInvalid option");
 				}
 			  }
+			}
+			else
+			{
+				System.out.println("Processing.....");
+				Thread.sleep(3000);
+				System.out.println("Password is Not Match");
+			}
+		
+			
 			  
 			}
 			
 			
-		
+		//Create Log-in form And Selecting Hotels
 		
 		case 2->{
 			System.out.print("Enter Mobile Number: ");
@@ -587,13 +600,20 @@ class Swigyy
 				int age=sw.nextInt();
 				if (age>=18)
 				{
-					int otp=(int)(Math.random()*9999+9999);
-					System.out.println("Processing....");
-					Thread.sleep(3000);
-					System.out.println(otp+" :Your OTP");
-					System.out.print("\nEnter Your OTP:");
-					int yotp=sw.nextInt();
-					if (otp==yotp)
+					System.out.print("create password: ");
+					int pass=sw.nextInt();
+					System.out.print("Again Enter Password: ");
+					int word=sw.nextInt();
+					
+					if (pass==word)
+					{
+						int otp=(int)(Math.random()*9999+9999);
+						System.out.println("Processing....");
+						Thread.sleep(3000);
+						System.out.println(otp+" :Your OTP");
+						System.out.print("\nEnter Your OTP:");
+						int yotp=sw.nextInt();
+						if (otp==yotp)
 			{
 				System.out.println("Account Created Successfull");
 				//Log-in page end here
@@ -801,7 +821,7 @@ class Swigyy
 						System.out.println("\t\t\tYou Selected Chiken Biriyani");
 						double amount=150;
 						System.out.println("\t\t\tChiken Biriyani Price:"+amount);
-						System.out.print("\n\t\t\tEnter quantity of Sambar rice:");
+						System.out.print("\n\t\t\tEnter quantity of Chiken Biriyani:");
 						int sr=sw.nextInt();
 						amount*=sr;
 						System.out.println("Processing.....");
@@ -970,7 +990,7 @@ class Swigyy
 				case 3->{
 					//Kfc
 					System.out.println("Welcome To Kfc Hotel");
-					System.out.println("\tMenu:\n\t1.Sambar Rice\n\t2.Dosa\n\t3.Vada\n\t4.Idly");
+					System.out.println("\tMenu:\n\t1.Fried Chiken\n\t2.Chiken Lalipop\n\t3.Chiken Burgur\n\t4.Chesee Pizza");
 					System.out.print("\t\t\tEnter Food Id:"); 
 					int kfc = sw.nextInt();
 					switch (kfc)
@@ -1023,7 +1043,7 @@ class Swigyy
 						Thread.sleep(3000);
 						System.out.println("\t\t\tYou Selected Chiken Lalipop");
 						double amount=250;
-						System.out.println("\t\t\tDosa Price:"+amount);
+						System.out.println("\t\t\tChiken Lalipop Price:"+amount);
 						System.out.print("\n\t\t\tEnter quantity of Chiken Lalipop:");
 						int sr=sw.nextInt();
 						amount*=sr;
@@ -1157,9 +1177,20 @@ class Swigyy
 				}
 			}
 			else
-			{
-				System.out.println("OTP is Not Matched");
-			}
+						{
+							System.out.println("Processing.....");
+							Thread.sleep(2000);
+							System.out.println("OTP is not Match");
+						}
+					}
+					else
+					{
+						System.out.println("Processing....");
+						Thread.sleep(2000);
+						System.out.println("password not match");
+					}
+				
+			
 			
 				}
 				

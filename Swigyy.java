@@ -193,6 +193,12 @@ class Swigyy
 							System.out.println("Amount does not match");
 						}
 					}
+					default->
+					{
+						System.out.println("Processing.....");
+						Thread.sleep(2000);
+						System.out.println("\n\t\t\tInvalid option");
+					}
 				}
 			}	
 				
@@ -369,6 +375,12 @@ class Swigyy
 							System.out.println("Amount does not match");
 						}
 					}
+					default->
+				{
+					System.out.println("Processing.....");
+					Thread.sleep(2000);
+					System.out.println("\n\t\t\tInvalid option");
+				}
 				}
 			}
 				case 3->{
@@ -544,10 +556,24 @@ class Swigyy
 							System.out.println("Amount does not match");
 						}
 					}
+					default->
+				{
+					System.out.println("Processing.....");
+					Thread.sleep(2000);
+					System.out.println("\n\t\t\tInvalid option");
+				}
 				  }
 				}
+				default->
+				{
+					System.out.println("Processing.....");
+					Thread.sleep(2000);
+					System.out.println("\n\t\t\tInvalid option");
+				}
 			  }
+			  
 			}
+			
 			
 		
 		
@@ -751,6 +777,12 @@ class Swigyy
 							System.out.println("Amount does not match");
 						}
 					}
+					default->
+				{
+					System.out.println("Processing.....");
+					Thread.sleep(2000);
+					System.out.println("\n\t\t\tInvalid option");
+				}
 					}
 					
 				}
@@ -927,6 +959,12 @@ class Swigyy
 							System.out.println("Amount does not match");
 						}
 					}
+					default->
+				{
+					System.out.println("Processing.....");
+					Thread.sleep(2000);
+					System.out.println("\n\t\t\tInvalid option");
+				}
 					}
 				}
 				case 3->{
@@ -1102,7 +1140,19 @@ class Swigyy
 							System.out.println("Amount does not match");
 						}
 					}
+					default->
+				{
+					System.out.println("Processing.....");
+					Thread.sleep(2000);
+					System.out.println("\n\t\t\tInvalid option");
+				}
 					}
+				}
+				default->
+				{
+					System.out.println("Processing.....");
+					Thread.sleep(2000);
+					System.out.println("\n\t\t\tInvalid option");
 				}
 				}
 			}
@@ -1112,6 +1162,7 @@ class Swigyy
 			}
 			
 				}
+				
 				else
 				{
 					System.out.println("age must be 18 or greater than 18");
@@ -1125,6 +1176,12 @@ class Swigyy
 			
 		
 		}
+		default->
+				{
+					System.out.println("Processing.....");
+					Thread.sleep(2000);
+					System.out.println("\n\t\t\tInvalid option");
+				}
 		
 		}
 		
